@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(255, 138, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@keyframes fall {
+   to{
+       transform: translateY(105vh);
+   }
+
+}
+
+h1{
+   position: fixed;
+   color: rgb(255, 0, 43);
+}
+
+.heart{
+    position: fixed;
+    font-size: 30px;
+    top: -1vh;
+    transform: translateY(-1vh);
+    animation: fall 3s linear forwards;
+}
+
+
+.love {
+    position: fixed;
+    font-size: 30px;
+    top: -1vh;
+    transform: translateY(-1vh);
+    animation: fall 3s linear forwards;
+}

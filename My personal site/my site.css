@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(255, 175, 222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+button{
+    font-size: 30px;
+    background-color: rgb(47, 255, 255);
+    border: none;
+    border-radius: 2px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 11px;
+    position: fixed;
+    top: 17px;
+    right: 17px;
+    color: cornsilk;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+nav{
+    background-color: rgb(0, 255, 255);
+    border: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+}
+
+nav.active{
+    transform: translateX(0);
+    
+}
+button.active{
+    transform: translateX(-100%);
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 11px;
+    transition: 0.32s ease-in-out;
+    margin: 11px 21.5px ;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 1rem;
+    
+}
+
+nav a{
+    color: azure;
+    text-decoration: none;
+}
+
+
+nav a:hover{
+    color: rgb(88, 0, 0);
+}
+
+
+@keyframes fall {
+    to{
+        transform: translateY(105vh);
+    }
+ 
+ }
+ 
+ h1{
+    position: fixed;
+    font-size: 50px;
+ }
+
+  
+ .heart{
+    position: fixed;
+    font-size: 30px;
+    top: -1vh;
+    transform: translateY(-1vh);
+    animation: fall 3s linear forwards;
+} 
+ 
+.gradient-text {
+    background-color: #51fff6;
+    
+    background-image: linear-gradient(
+         -128deg,
+        #ff3131 14.666%, 
+        #fff279 21.666%, 
+        #7fff43 30.333%, 
+        #62ff89 34.333%, 
+        hsl(172, 100%, 68%) 46%, 
+        #7bebff 46%, 
+        #6cd5ff 55.666%, 
+        #6c61ff 39.666%, 
+        #ff3292 83.3333%,
+        #ff1534 43.333%);
+    
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+      animation: rainbow-text-simple-animation-rev 0.76s ease forwards;
+  
+  }
+  
+  .gradient-text:hover{
+      animation: rainbow-text-simple-animation 0.66s ease-in forwards;
+  }
+  
+  
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 100%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
