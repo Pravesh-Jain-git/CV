@@ -5,22 +5,17 @@ btn.addEventListener("click", () => {
     nav.classList.toggle("active")
     btn.classList.toggle("active")
 })
-btn.addEventListener("click", () => {
 
-    btn.innerText.toggle("☠");
-    btn.innerText.toggle("☣");
-})
 
 
 function createHeart() {
     const heart = document.createElement("div");
 
     heart.classList.add("heart");
-    
-    let listitem = ["💲","👨‍💻","❤️"]
+    let itemlist = ["💲", "❤️", "♾️"]
 
-    heart.innerText = "💲";
-
+    let rand = Math.floor(Math.random() * 3)
+    heart.innerText = itemlist[rand];
     document.body.appendChild(heart);
 
     heart.style.left = Math.random() * 100 - 4 + "vw";
