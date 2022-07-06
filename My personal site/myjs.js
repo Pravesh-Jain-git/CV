@@ -16,8 +16,10 @@ function createHeart() {
     const heart = document.createElement("div");
 
     heart.classList.add("heart");
+    
+    let listitem = ["💲","👨‍💻","❤️"]
 
-    heart.innerText = "💕";
+    heart.innerText = "💲";
 
     document.body.appendChild(heart);
 
